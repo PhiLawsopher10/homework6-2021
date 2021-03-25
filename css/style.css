@@ -25,7 +25,7 @@ header{
   align-self: center;
   flex-direction: column;
   flex-basis: content;
-}
+
 
 
 /*Requirement 4*/
@@ -36,15 +36,15 @@ header{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
     flex-basis: 400px;
+    flex-wrap: wrap;
     /*You must use flex.
     /*Don't forget to vertically and horizontally 
     align the element*/
 }
 
 /*Requirement 5*/
-.package {
+.package{
   margin: 12px;
   background: #fff;
   border-radius: 7px;
@@ -58,7 +58,7 @@ header{
 }
 
 /*Requirement 6*/
-.package > header {
+.package > header{
   background: #288080;
   border: 2px solid #45ADAD;
   padding: 20px 0;
@@ -79,7 +79,7 @@ header{
 
 /*Requirement 8*/
 
-.gallery > * {
+.gallery > *{
   border: 10px #50C7C7 solid;
   margin: 10px;
   width: 300px;
@@ -125,7 +125,7 @@ header{
   }
 
   /*Requirement 11*/
-  .package {
+  .package{
     /*Your code here again.*/
     flex-basis: 230px;
   } 
@@ -135,7 +135,7 @@ header{
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/
 @media (prefers-reduced-motion: reduce){
-  #logo {
+  #logo{
     animation: none;
   }
 }
@@ -145,11 +145,39 @@ header{
 @media print { 
 
   /*Requirement 13*/
+  body{
+    background-image: none;
+  }
   /*Requirement 14*/
+  nav{
+    width: 100%;
+  }
   /*Requirement 15*/
+  .nav_links{
+    position: relative;
+    right: -10vw;
+    width: 80vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   /*Requirement 16*/
+  .price{
+    margin-top: auto;
+  }
   /*Requirement 17*/
+  .package{
+    border: 2px solid #45ADAD;
+    margin-top: auto;
+    flex-basis: 200px;
+  }
   /*Requirement 18*/
- 
+  .gallery{
+    display: none;  
+  }
+  
+  #gallery{
+    display: none;
+  }
+
 }
 
