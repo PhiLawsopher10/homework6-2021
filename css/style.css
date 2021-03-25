@@ -27,7 +27,7 @@ header{
   flex-basis: content;
 
 
-
+}
 /*Requirement 4*/
 .price{
     min-height: 500px;
@@ -142,7 +142,7 @@ header{
 
 
 
-@media print { 
+ @media print { 
 
   /*Requirement 13*/
   body{
@@ -177,7 +177,7 @@ header{
   
   #gallery{
     display: none;
-  }
+  } 
 
 }
 
